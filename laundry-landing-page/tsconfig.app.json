@@ -24,10 +24,7 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    /*@ paths*/
-    "types": ["vite/client"]
+    "noUncheckedSideEffectImports": true
   },
   "include": ["src"]
 }
