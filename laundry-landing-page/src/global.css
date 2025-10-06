@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-
 :root {
   scroll-behavior: smooth; /* smooth anchor scrolling */
   /*Shadows*/
@@ -10,7 +9,9 @@
 
 @theme {
   /* Main Colors */
-  --color-primary: oklch(48.29% 0.202 273deg);
+  --color-primary: oklch(55.93% 0.151 244.75deg);
+
+  --color-accent: oklch(96.11% 0.017 264deg);
   --color-dark: oklch(21.18% 0.01 273deg);
   --color-muted: oklch(55.81% 0.04 251.7deg);
 
@@ -20,6 +21,7 @@
   --color-txt-highlight: var(--color-primary);
 
   /* Components */
+  --color-bg-primary: var(--color-accent);
 
   /*Fonts*/
 }
@@ -29,7 +31,6 @@
 }
 
 @layer components {
-
   .flex-div {
     @apply flex justify-center;
   }
