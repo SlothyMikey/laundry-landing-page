@@ -1,10 +1,15 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
-import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import useDarkMode from '@/hooks/useDarkMode';
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('home');
   const [isAtTop, setIsAtTop] = useState<boolean>(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const { dark, toggle } = useDarkMode();
 
   const navItems = useMemo(
     () => [
@@ -13,7 +18,7 @@ const Navbar: React.FC = () => {
       { id: 'pricing', label: 'Pricing' },
       { id: 'contact', label: 'Contact' },
     ],
-    []
+    [],
   );
 
   useEffect(() => {
@@ -54,8 +59,10 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={
-        'fixed top-0 left-0 right-0 z-50 text-text-primary w-full transition-colors duration-300' +
-        (isAtTop ? ' bg-transparent' : ' backdrop-blur-sm bg-white/60 shadow-md')
+        'fixed top-0 left-0 right-0 z-50 text-text-primary w-full transition-colors duration-300 text-txt-primary' +
+        (isAtTop
+          ? ' bg-transparent'
+          : ' backdrop-blur-sm bg-bg-light/60 shadow-md')
       }
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-10">
@@ -89,17 +96,20 @@ const Navbar: React.FC = () => {
           })}
         </ul>
 
-        <Button
-          variant="outlined"
+        <IconButton
+          onClick={toggle}
+          color="inherit"
+          aria-label="Toggle dark mode"
           sx={{ display: { xs: 'none', md: 'inline-flex' } }}
         >
-          Contact Us
-        </Button>
+          {dark ? <Brightness7Icon /> : <Brightness4Icon />}
+        </IconButton>
 
-        {/* Mobile menu button (visual only) */}
+        {/* Mobile menu button */}
         <button
-          aria-label="Open menu"
-          className="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+          aria-label="Toggle menu"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-txt-primary/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-txt-primary"
         >
           <svg
             className="w-6 h-6"
@@ -107,15 +117,62 @@ const Navbar: React.FC = () => {
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+            {mobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
           </svg>
         </button>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-bg-light border-t border-txt-primary/10">
+          <ul className="px-4 py-4 space-y-3">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={
+                      'block py-2 px-3 rounded-md text-base transition-colors' +
+                      (isActive
+                        ? ' bg-bg-highlight text-light font-semibold'
+                        : ' hover:bg-txt-primary/5')
+                    }
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="px-4 pb-4 flex items-center justify-between border-t border-txt-primary/10 pt-4">
+            <span className="text-sm text-txt-muted">Theme</span>
+            <IconButton
+              onClick={toggle}
+              color="inherit"
+              aria-label="Toggle dark mode"
+              size="small"
+            >
+              {dark ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
