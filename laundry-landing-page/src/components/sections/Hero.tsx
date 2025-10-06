@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <section
         id="home"
-        className="relative flex items-center justify-center w-full h-screen max-h-[768px] overflow-hidden"
+        className="relative flex items-center justify-center w-full h-screen max-h-[768px] overflow-hidden bg-bg-light transition-colors duration-300"
       >
         <div className="flex flex-col md:flex-row justify-evenly w-full max-w-screen-xl mx-auto px-4 md:px-8 relative z-10">
           {/* Left Side */}
