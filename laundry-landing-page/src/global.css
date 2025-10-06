@@ -2,9 +2,6 @@
 
 :root {
   scroll-behavior: smooth; /* smooth anchor scrolling */
-  /*Shadows*/
-  --box-shadow: 0 0 8px 4px oklch(0% 0 0deg / 0.5);
-  --img-shadow: 0 2px 4px oklch(0% 0 0deg / 0.5);
 }
 
 @theme {
@@ -27,6 +24,13 @@
   --color-bg-highlight: var(--color-primary);
   --color-bg-dark: var(--color-accent);
   --color-bg-light: var(--color-light);
+
+  /* Pricing Cards */
+  --color-bg-card-standard: var(--color-bg-dark);
+  --color-bg-card-exclusive: var(--color-primary);
+
+  --color-txt-card-standard: var(--color-txt-primary);
+  --color-txt-card-exclusive: var(--color-light);
 
   /* Components */
   --color-nav-txt: var(--color-dark);
