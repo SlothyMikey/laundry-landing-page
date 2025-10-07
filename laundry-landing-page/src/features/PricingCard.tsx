@@ -25,19 +25,19 @@ export default function PricingCard({
         <div className="text-5xl font-bold mb-2">
           ₱{price} <span className="text-lg font-normal">/ Load</span>
         </div>
-        <h3 className="flex flex-col gap-2 text-xl font-semibold mb-1">
-          {planName}
+        <h3 className="flex gap-2 text-xl font-semibold mb-1">{planName}</h3>
+        <p className="flex flex-col text-sm opacity-90">
+          {description}
           <span
             className={
               isExclusive
-                ? 'text-sm text-txt-primary font-normal rounded bg-bg-light mx-2 px-2 py-1 w-fit'
+                ? 'text-sm text-txt-primary font-normal rounded bg-bg-light my-2 px-2 py-1 w-fit'
                 : 'hidden'
             }
           >
             Best Service
           </span>
-        </h3>
-        <p className="text-sm opacity-90">{description}</p>
+        </p>
       </div>
 
       <ul className="space-y-3 mb-8">
