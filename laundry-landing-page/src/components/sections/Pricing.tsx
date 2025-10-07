@@ -21,7 +21,7 @@ export default function Pricing() {
           {/* Pricing Container */}
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             {/* Left Section - Main Pricing Plans */}
-            <div className="flex flex-col md:flex-row gap-6 lg:sticky lg:top-24 lg:self-start">
+            <div className="w-full flex flex-col justify-center md:flex-row gap-6 lg:sticky lg:top-24 lg:self-start">
               {pricingPlans.map((plan, index) => (
                 <PricingCard key={index} {...plan} />
               ))}

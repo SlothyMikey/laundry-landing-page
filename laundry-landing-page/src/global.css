@@ -28,7 +28,6 @@
   /* Pricing Cards */
   --color-bg-card-standard: var(--color-bg-dark);
   --color-bg-card-exclusive: var(--color-primary);
-
   --color-txt-card-standard: var(--color-txt-primary);
   --color-txt-card-exclusive: var(--color-light);
 
