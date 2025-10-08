@@ -6,6 +6,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Map from '@/features/Map';
+
+const businessLocation = { lat: 14.2226546, lng: 120.9736 };
 
 export default function Contact() {
   return (
@@ -133,11 +136,11 @@ export default function Contact() {
             </div>
 
             {/* Right Section - Image */}
-            <div className="w-full lg:w-3/5 rounded-2xl overflow-hidden shadow-[var(--box-shadow)]">
-              <img
-                src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1000"
-                alt="Laundry Service"
-                className="w-full h-full object-cover min-h-[400px] lg:min-h-[600px]"
+            <div className="w-full lg:w-3/5 rounded-2xl overflow-hidden shadow-[var(--box-shadow)] z-10">
+              <Map
+                position={businessLocation}
+                markerText="Acme Corp HQ - Manila"
+                zoom={19} // Zoom in closer
               />
             </div>
           </div>
