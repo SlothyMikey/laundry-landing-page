@@ -28,7 +28,7 @@ export default function Pricing() {
             </div>
 
             {/* Right Section - Additional Services */}
-            <div className="flex flex-col gap-6 w-full lg:w-auto">
+            <div className="flex flex-col items-center gap-6 w-full lg:w-auto">
               {additionalServices.map((service, index) => (
                 <PricingCard key={index} {...service} />
               ))}
