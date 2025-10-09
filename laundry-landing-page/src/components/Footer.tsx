@@ -86,9 +86,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <PhoneIcon className="text-txt-highlight text-xl" />
-                <h4 className="text-txt-muted text-sm transition-colors">
-                  +63 933 810 7121 | + 63 933 810 7122
-                </h4>
+                <div className="text-txt-muted text-sm transition-colors flex gap-2">
+                  <a href="tel:+639338107121" className="hover:text-txt-highlight">+63 933 810 7121</a>
+                  <span>|</span>
+                  <a href="tel:+639338107122" className="hover:text-txt-highlight">+63 933 810 7122</a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <FacebookIcon className="text-txt-highlight text-xl" />
