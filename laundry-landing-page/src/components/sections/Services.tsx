@@ -28,9 +28,6 @@ export default function Services() {
             </div>
           ))}
         </div>
-        <h3 className="text-lg text-center text-txt-muted font-semibold mt-10">
-          And many more...
-        </h3>
       </div>
     </section>
   );
