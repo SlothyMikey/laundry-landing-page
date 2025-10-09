@@ -1,11 +1,7 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,6 +10,8 @@ export default function Footer() {
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -33,49 +31,12 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LocalLaundryServiceIcon className="text-txt-highlight text-3xl" />
-              <h3 className="text-xl font-bold">
-                Fresh<span className="text-txt-highlight">Wash</span>
-              </h3>
+              <h3 className="text-xl font-bold">Laver Savon</h3>
             </div>
-            <p className="text-txt-muted text-sm mb-4">
-              Your trusted laundry service provider. We ensure your clothes are
-              cleaned with care and returned fresh every time.
+            <p className="text-txt-muted text-sm">
+              Your trusted laundry service provider in Silang. We ensure your
+              clothes are cleaned with care and returned fresh every time.
             </p>
-            {/* Social Media */}
-            <div className="flex gap-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-              >
-                <FacebookIcon className="text-txt-highlight group-hover:text-white transition-colors text-xl" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-              >
-                <InstagramIcon className="text-txt-highlight group-hover:text-white transition-colors text-xl" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-              >
-                <TwitterIcon className="text-txt-highlight group-hover:text-white transition-colors text-xl" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-              >
-                <LinkedInIcon className="text-txt-highlight group-hover:text-white transition-colors text-xl" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -120,25 +81,22 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <LocationOnIcon className="text-txt-highlight text-xl mt-0.5" />
                 <p className="text-txt-muted text-sm">
-                  4517 State Ave NE, Albuquerque, New York, United States
+                  105 M. H. Del Pilar St, Poblacion 3, Silang, Cavite
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <PhoneIcon className="text-txt-highlight text-xl" />
-                <a
-                  href="tel:+15551234567"
-                  className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
-                >
-                  (555) 762-5686
-                </a>
+                <h4 className="text-txt-muted text-sm transition-colors">
+                  +63 933 810 7121 | + 63 933 810 7122
+                </h4>
               </div>
               <div className="flex items-center gap-2">
-                <EmailIcon className="text-txt-highlight text-xl" />
+                <FacebookIcon className="text-txt-highlight text-xl" />
                 <a
-                  href="mailto:demo@yourwebsite.com"
+                  href="https://www.facebook.com/laversavon/"
                   className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
                 >
-                  demo@yourwebsite.com
+                  Laversavon Laundry Shop
                 </a>
               </div>
             </div>

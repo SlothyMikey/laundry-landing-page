@@ -9,7 +9,6 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Auto-play carousel
   useEffect(() => {
     if (!isAutoPlaying) return;
 
@@ -17,7 +16,7 @@ export default function Testimonials() {
       setCurrentIndex((prevIndex) =>
         prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1,
       );
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isAutoPlaying]);

@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
             titleAccess="Laundry basket"
             sx={{ fontSize: 32 }}
           />
-          <span className="text-xl font-bold tracking-wide">LaundryX</span>
+          <span className="text-xl font-bold tracking-wide">Laver Savon</span>
         </div>
 
         <ul className="hidden md:flex items-center space-x-6">

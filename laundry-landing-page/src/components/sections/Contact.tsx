@@ -1,11 +1,7 @@
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Map from '@/features/Map';
 
 const businessLocation = { lat: 14.2226546, lng: 120.9736 };
@@ -41,7 +37,7 @@ export default function Contact() {
                       Address
                     </h4>
                     <p className="text-txt-muted text-sm">
-                      4517 State Ave NE, Albuquerque, New York, United States
+                      105 M. H. Del Pilar St, Poblacion 3, Silang, Cavite
                     </p>
                   </div>
                 </div>
@@ -53,12 +49,9 @@ export default function Contact() {
                     <h4 className="font-semibold text-txt-primary mb-1">
                       Phone
                     </h4>
-                    <a
-                      href="tel:+15551234567"
-                      className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
-                    >
+                    <h4 className="text-txt-muted text-sm hover:text-txt-highlight transition-colors">
                       +63 933 810 7121 | + 63 933 810 7122
-                    </a>
+                    </h4>
                   </div>
                 </div>
 
@@ -73,7 +66,7 @@ export default function Contact() {
                       href="https://www.facebook.com/laversavon/"
                       className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
                     >
-                      Laverson Laundry Shop
+                      Laversavon Laundry Shop
                     </a>
                   </div>
                 </div>
