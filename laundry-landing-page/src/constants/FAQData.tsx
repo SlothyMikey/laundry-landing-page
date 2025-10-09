@@ -2,6 +2,37 @@ import type { FAQItem } from '@/types/FAQTypes';
 
 export const faqData: FAQItem[] = [
   {
+    question: 'What items do we NOT accept?',
+    answer: (
+      <div>
+        <p className="mb-4">
+          To our valued customers, our laundry shop doesn't accept the
+          following:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+          <ul className="list-disc list-inside space-y-1">
+            <li>Gown</li>
+            <li>Barong</li>
+            <li>Coat</li>
+            <li>Curtain with plastic ring</li>
+            <li>Pillow</li>
+            <li>Rags (Basahan)</li>
+            <li>Stuff toys</li>
+          </ul>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Formal dress with lace</li>
+            <li>Beads</li>
+            <li>Shoes</li>
+            <li>Bag</li>
+            <li>Clothes with animal fur</li>
+            <li>Belt</li>
+            <li>Cap/Hat</li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
     question: 'What are your operating hours?',
     answer:
       'We are open Monday through Friday from 9am to 6pm, and Saturday through Sunday from 9am to 2pm. We also offer 24/7 pickup and delivery service for your convenience.',
@@ -20,16 +51,6 @@ export const faqData: FAQItem[] = [
     question: 'Do you offer same-day service?',
     answer:
       'Yes! Same-day service is available for orders placed before 10am. Additional charges may apply for express service.',
-  },
-  {
-    question: 'How do you ensure my clothes are safe?',
-    answer:
-      'We tag each item individually, use professional-grade equipment, and follow strict quality control procedures. We also offer insurance options for high-value items.',
-  },
-  {
-    question: 'What if I have special fabric care requirements?',
-    answer:
-      'We handle delicate fabrics with extra care. Just let us know about any special requirements when you drop off your items, and our trained staff will follow the appropriate care instructions.',
   },
   {
     question: 'Can I track my order?',

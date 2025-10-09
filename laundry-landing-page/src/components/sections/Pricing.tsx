@@ -1,5 +1,6 @@
 import PricingCard from '@/features/PricingCard';
 import { pricingPlans, additionalServices } from '@/constants/pricingData';
+import LaundryBasket from '@/assets/images/LaundryBasket.png';
 
 export default function Pricing() {
   return (
@@ -17,6 +18,28 @@ export default function Pricing() {
             Choose a plan that fits your laundry needs. No hidden fees, just
             simple and transparent pricing.
           </p>
+
+          {/* Important Reminder Banner */}
+          <div className="flex items-center justify-between max-w-screen-sm bg-gradient-to-r from-bg-highlight to-txt-highlight mx-auto rounded-2xl p-6 mb-10 shadow-lg overflow-hidden md:overflow-visible relative">
+            <div className="text-left text-white z-10">
+              <h3 className="text-2xl text-white font-bold mb-2 bg-red-400 px-3 py-1 rounded-full inline-block">
+                ! Important Reminder
+              </h3>
+              <p className="text-lg font-medium">
+                Only <span className="text-3xl font-extrabold">7kg</span> per
+                load
+              </p>
+              <p className="text-sm opacity-90 mt-1">
+                Exceeding the limit will count as another load
+              </p>
+            </div>
+
+            <img
+              src={LaundryBasket}
+              alt="Laundry Basket"
+              className="absolute -right-8 w-xs h-xs object-contain hover:scale-110 transition-transform duration-300 opacity-50 md:opacity-100"
+            />
+          </div>
 
           {/* Pricing Container */}
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">

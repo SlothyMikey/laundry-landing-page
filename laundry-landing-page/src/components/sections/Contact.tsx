@@ -1,11 +1,7 @@
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Map from '@/features/Map';
 
 const businessLocation = { lat: 14.2226546, lng: 120.9736 };
@@ -41,7 +37,7 @@ export default function Contact() {
                       Address
                     </h4>
                     <p className="text-txt-muted text-sm">
-                      4517 State Ave NE, Albuquerque, New York, United States
+                      105 M. H. Del Pilar St, Poblacion 3, Silang, Cavite
                     </p>
                   </div>
                 </div>
@@ -53,27 +49,36 @@ export default function Contact() {
                     <h4 className="font-semibold text-txt-primary mb-1">
                       Phone
                     </h4>
-                    <a
-                      href="tel:+15551234567"
-                      className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
-                    >
-                      (555) 762-5686
-                    </a>
+                    <div className="text-txt-muted text-sm">
+                      <a
+                        href="tel:+639338107121"
+                        className="hover:text-txt-highlight transition-colors"
+                      >
+                        +63 933 810 7121
+                      </a>
+                      <span className="mx-2">|</span>
+                      <a
+                        href="tel:+639338107122"
+                        className="hover:text-txt-highlight transition-colors"
+                      >
+                        +63 933 810 7122
+                      </a>
+                    </div>
                   </div>
                 </div>
 
                 {/* Email */}
                 <div className="flex items-start gap-3">
-                  <EmailIcon className="text-txt-highlight mt-1" />
+                  <FacebookIcon className="text-txt-highlight mt-1" />
                   <div>
                     <h4 className="font-semibold text-txt-primary mb-1">
-                      E-Mail
+                      Facebook
                     </h4>
                     <a
-                      href="mailto:demo@yourwebsite.com"
+                      href="https://www.facebook.com/laversavon/"
                       className="text-txt-muted text-sm hover:text-txt-highlight transition-colors"
                     >
-                      demo@yourwebsite.com
+                      Laversavon Laundry Shop
                     </a>
                   </div>
                 </div>
@@ -90,47 +95,6 @@ export default function Contact() {
                       <p>Sat - Sun: 9am - 2pm</p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Social Media Links */}
-              <div className="mt-8 pt-8 border-t border-txt-muted/20">
-                <h4 className="font-semibold text-txt-primary mb-4">
-                  Follow Us
-                </h4>
-                <div className="flex gap-4">
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-                  >
-                    <FacebookIcon className="text-txt-highlight group-hover:text-white transition-colors" />
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-                  >
-                    <InstagramIcon className="text-txt-highlight group-hover:text-white transition-colors" />
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-                  >
-                    <TwitterIcon className="text-txt-highlight group-hover:text-white transition-colors" />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-txt-highlight/10 hover:bg-txt-highlight flex items-center justify-center transition-colors group"
-                  >
-                    <LinkedInIcon className="text-txt-highlight group-hover:text-white transition-colors" />
-                  </a>
                 </div>
               </div>
             </div>

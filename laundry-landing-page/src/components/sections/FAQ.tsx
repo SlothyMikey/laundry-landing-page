@@ -47,7 +47,7 @@ export default function FAQ() {
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
                   openIndex === index
-                    ? 'max-h-96 opacity-100'
+                    ? 'max-h-[1000px] opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
               >

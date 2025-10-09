@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full bg-bg-dark transition-colors duration-300"
+      className="w-full bg-bg-dark transition-colors duration-300 relative"
     >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-8 py-24">
         <h2 className="text-4xl text-center font-bold text-txt-primary mb-6">
@@ -28,9 +28,6 @@ export default function Services() {
             </div>
           ))}
         </div>
-        <h3 className="text-lg text-center text-txt-muted font-semibold mt-10">
-          And many more...
-        </h3>
       </div>
     </section>
   );
