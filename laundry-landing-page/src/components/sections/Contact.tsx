@@ -49,9 +49,21 @@ export default function Contact() {
                     <h4 className="font-semibold text-txt-primary mb-1">
                       Phone
                     </h4>
-                    <h4 className="text-txt-muted text-sm hover:text-txt-highlight transition-colors">
-                      +63 933 810 7121 | + 63 933 810 7122
-                    </h4>
+                    <div className="text-txt-muted text-sm">
+                      <a
+                        href="tel:+639338107121"
+                        className="hover:text-txt-highlight transition-colors"
+                      >
+                        +63 933 810 7121
+                      </a>
+                      <span className="mx-2">|</span>
+                      <a
+                        href="tel:+639338107122"
+                        className="hover:text-txt-highlight transition-colors"
+                      >
+                        +63 933 810 7122
+                      </a>
+                    </div>
                   </div>
                 </div>
 
