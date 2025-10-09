@@ -1,4 +1,4 @@
-import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
+import Logo from '@/components/ui/Logo';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <LocalLaundryServiceIcon className="text-txt-highlight text-3xl" />
+            <div className="flex items-center gap-2 mb-4 text-txt-highlight">
+              <Logo className="w-8 h-8 " />
               <h3 className="text-xl font-bold">Laver Savon</h3>
             </div>
             <p className="text-txt-muted text-sm">
@@ -87,9 +87,19 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <PhoneIcon className="text-txt-highlight text-xl" />
                 <div className="text-txt-muted text-sm transition-colors flex gap-2">
-                  <a href="tel:+639338107121" className="hover:text-txt-highlight">+63 933 810 7121</a>
+                  <a
+                    href="tel:+639338107121"
+                    className="hover:text-txt-highlight"
+                  >
+                    +63 933 810 7121
+                  </a>
                   <span>|</span>
-                  <a href="tel:+639338107122" className="hover:text-txt-highlight">+63 933 810 7122</a>
+                  <a
+                    href="tel:+639338107122"
+                    className="hover:text-txt-highlight"
+                  >
+                    +63 933 810 7122
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-2">

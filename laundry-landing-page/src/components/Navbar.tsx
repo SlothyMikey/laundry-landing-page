@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import LocalLaundryServiceIcon from '@mui/icons-material/LocalLaundryService';
+import Logo from '@/components/ui/Logo';
 import IconButton from '@mui/material/IconButton';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -67,12 +67,8 @@ const Navbar: React.FC = () => {
       }
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-10">
-        <div className="flex items-center">
-          <LocalLaundryServiceIcon
-            className="mr-2"
-            titleAccess="Laundry basket"
-            sx={{ fontSize: 32 }}
-          />
+        <div className="flex items-center gap-2 text-txt-highlight">
+          <Logo className="w-8 h-8 " />
           <span className="text-xl font-bold tracking-wide">Laver Savon</span>
         </div>
 
